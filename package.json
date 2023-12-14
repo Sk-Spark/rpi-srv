@@ -4,19 +4,29 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "ts-node src/server.ts",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-srv": "nodemon --exec ts-node src/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/mdns": "^0.0.38",
+    "bonjour": "^3.5.0",
     "express": "^4.18.2",
+    "mdns": "^2.7.2",
+    "mdns-discovery": "^0.2.6",
+    "mdns-js": "^1.0.3",
+    "multicast-dns": "^7.2.5",
     "ts-node": "^10.9.1",
     "typescript": "^5.3.2"
   },
   "devDependencies": {
-    "@types/express": "^4.17.21"
+    "@types/bonjour": "^3.5.13",
+    "@types/express": "^4.17.21",
+    "@types/multicast-dns": "^7.2.4",
+    "nodemon": "^3.0.1"
   }
 }

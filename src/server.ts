@@ -4,9 +4,15 @@ import path from 'path';
 const app = express();
 const port = process.env.PORT || 5000;
 
-// app.get('/', (req, res) => {
-//   res.send('Hello from Express!');
-// });
+
+// API code for sever
+
+app.get('/api', (req, res) => {
+  res.send('Hello from Express Server!');
+});
+
+
+// Serving React UI code
 
 // if (process.env.NODE_ENV === 'production') {
   // Serve any static files
