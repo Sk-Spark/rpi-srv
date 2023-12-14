@@ -13,9 +13,9 @@ export class MdnsScanner {
         return localIp;
     }
 
-    constructor() {
+    constructor(port:any) {
         // advertise an HTTP server on port 3000
-        bonjour.publish({ name: 'IotSrv', type: 'http', port: 3000 })
+        bonjour.publish({ name: 'IotSrv', type: 'http', port: port })
 
         // browse for all http services
         bonjour.find({ type: 'http' }, function (service: any) {

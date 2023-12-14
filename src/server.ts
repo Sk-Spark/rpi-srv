@@ -2,10 +2,10 @@ import express from 'express';
 import path from 'path';
 import {MdnsScanner} from './api/MDNSScanner';
 
-const mScanner = new MdnsScanner();
 
 const app = express();
 const port = process.env.PORT || 5000;
+const mScanner = new MdnsScanner(port);
 
 
 // API code for sever

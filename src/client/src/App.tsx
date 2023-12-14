@@ -65,7 +65,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className='header_div'>
-          <h2>RPi IOT Server</h2>
+          <p>RPi IOT Server</p>
           <div className='referesh_div' onClick={()=>{
               setLoadData(!loadData);
               setIsLoading(true);
